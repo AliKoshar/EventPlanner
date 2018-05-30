@@ -19,7 +19,7 @@ import { CelebrationExpensesComponent } from './Post-Event Services/celebration-
 const appRoutes: Routes = [
   { path: 'eventproposal', component: EventProposalComponent }
  
-  
+  { path: 'receivedcontribution', component: ReceivedContributionComponent },
 ];
 
 
