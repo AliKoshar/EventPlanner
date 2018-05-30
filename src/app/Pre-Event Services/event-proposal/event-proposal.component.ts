@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./event-proposal.component.css']
 })
 export class EventProposalComponent implements OnInit {
-
+  minDate = new Date();
+  maxDate = new Date(2020, 0, 1);
   constructor() { }
 
   ngOnInit() {

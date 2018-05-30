@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { EventProposalComponent } from './Pre-Event Services/event-proposal/event-proposal.component';
 import { RouterModule,Routes } from '@angular/router';
+import { ReceivedContributionComponent } from './Pre-Event Services/received-contribution/received-contribution.component';
 
 
 
@@ -17,9 +18,9 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    EventProposalComponent
-  
-  ],
+    EventProposalComponent,
+    ReceivedContributionComponent
+   ],
   
   imports: [
     BrowserModule,
