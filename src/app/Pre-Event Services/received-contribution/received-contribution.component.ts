@@ -11,4 +11,8 @@ export class ReceivedContributionComponent implements OnInit {
 
   ngOnInit() {
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99620ce122f41783efc39d859517105cf39007f8
 }
