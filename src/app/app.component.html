@@ -1,28 +1,9 @@
 <html>
-  <head>
-<meta charset="utf-8">
-  <title>Received Contribution</title>
-  <base href="/">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <style>
-    .center {
-    margin: auto;
-    width: 50%;
-    border: 3px solid lightblue;
-    padding: 10px;
-    margin-top: 50px;
-}
-</style>
-  </head>
-  <body>
-
+<body>
 <div style="width:1440px; margin-left:-15px; margin-top:-10px;background-color:lightblue">
-        <img src="../assets/Images/Capture.PNG" style="height: 67px; margin-top: auto; width: 100px" />
-         <img src="../assets/Images/Capture2.PNG" style="margin-left:492px;margin-bottom:10px" />
+        <img src="../assets/images/Capture.PNG" style="height: 67px; margin-top: auto; width: 100px" />
+         <img src="../assets/images/Capture2.PNG" style="margin-left:492px;margin-bottom:10px" />
 </div>
-
 <div class="navbar" style="width:1440px; margin-left:-15px">
   <div class="dropdown">
     <button class="dropbtn">Home 
@@ -34,8 +15,8 @@
     <button class="dropbtn">Pre-EventServices 
     
     </button>
-    <div class="dropdown-content">
-      <a href="#">Event Proposal</a>
+    <div class="dropdown-content"  routerLinkActive="active">
+        <a class="nav-link" routerLink="eventproposal">Event Proposal</a>
       <a href="#">Received Contribution</a>
     </div>
   </div> 
@@ -54,49 +35,10 @@
 
     </button>
   </div>
+  
 </div>
+<router-outlet></router-outlet>
 
-<div id="topDiv" class="center">
-            <h1>Received Contribution</h1>
-
-<table>
-
-                <tr>
-                    <td>
-                        <label>Employee Name:<span style="color: red"> *</span></label>
-                    </td>
-                    <td>
-                        <select id="eName">
-                            <option></option>
-                        </select>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <label>Amount Expected:</label>
-                    </td>
-                    <td>
-                        <input type="text" id="amountExpected" readonly />
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <label>Amount Received:<span style="color: red"> *</span></label>
-                    </td>
-                    <td>
-                        <input type="text" id="amountReceived" maxlength="4" placeholder="Enter Digits only" />
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <button type="submit" id="btnSubmit">Submit</button>
-                    </td>
-                </tr>
-            </table>
-</div>
 
   </body>
 </html>
