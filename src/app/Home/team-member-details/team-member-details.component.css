@@ -1,0 +1,41 @@
+.button-style {
+    width: 100%;
+    background-color: lightgray;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+div {
+    border-radius: 5px;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+#employees {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#employees td, #employees th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#employees th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+}
+
+.label-font{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}

@@ -1,51 +1,64 @@
+<html>
+  <head>
+  <meta charset="utf-8">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
 
-        <div class="Form">
-            <h1>Event Proposal</h1>
-        </div>
-        <table id="tblEventProposal" style="margin: 0px auto">
-            <tr>
-                <td style="height: 80px;">
-                    <label>Select Date: </label>
-                    <span style="color: red"> *</span></td>
-                <td style="width: 172px; height: 80px;">
-                   
-                   <!-- <input class="form-control" placeholder="yyyy-mm-dd"
-                    name="dp"  EventProposalComponent #d="ngbDatepicker">
-             <div class="input-group-append">
-               <button class="btn btn-outline-secondary" (click)="d.toggle()" type="button">
-                 <img src="images/download.png" style="width: 1.2rem; height: 1rem; cursor: pointer;"/>
-               </button>
-             </div>
-                    <input id="datepicker" dateFormat: "yy-mm-dd" /><br />-->
-                </td>
-            </tr>
-            <tr>
-                <td style="height: 80px;">
-                    <label>Estimated Expenses: </label>
-                    <span style="color: red"> *</span></td>
-                <td style="width: 172px; height: 80px;">
-                    <input type="text" id="txtEstimatedexpense" name="estimatedexpense" placeholder="Enter Digits only" maxlength="6" required /></td>
-            </tr>
+<body>
+<h1 style="text-align:center">Event Proposal</h1>
+<br/><br/>
 
-            <tr>
-                <td style="height: 80px;">
-                    <label>Number of Members: </label>
-                </td>
-                <td style="width: 172px; height: 80px;">
-                    <input id="txtNumberofmembers" name="numberofmembers" value="@Model.CountTeamMember" readonly /></td>
-            </tr>
+<div style="padding-left:480px">
+<table>
 
-            <tr>
-                <td style="height: 80px;">
-                    <label>Amount Per Person: </label>
-                </td>
-                <td style="width: 172px; height: 80px;">
-                    <input type="text" name="Amountperperson" id="txtAmountperperson" readonly /></td>
-            </tr>
+                <tr>
+                    <td>
+                        <label class="label-font">Select Date:<span style="color: red"> *</span></label>
+                    </td>
+                    <td>
+                        <input type="date" class="form-control" />
+                        <!--<select id="cDate" style="width:100%">
+                            <option>--select--</option>
+                            <option>01-Jan-18</option>
+                            <option>01-Feb-18</option>
+                        </select>-->
+                    </td>
+                </tr>
 
-            <tr>
-                <td style="width: 172px; height: 46px;">
-                    <input type="button" value="Submit" id="btnSubmit" style="margin: auto; align-content: center; text-align: center; position: relative; top: 0px; left: 110px;" /></td>
-            </tr>
-        </table>
-    
+                <tr>
+                    <td>
+                        <label class="label-font">Estimated Expenses:<span style="color: red"> *</span></label>
+                    </td>
+                    <td>
+                        <input type="text" id="estimatedExpenses" maxlength="4" placeholder="Enter Digits only"  />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label class="label-font">Number of Members:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="members" readonly />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label class="label-font">Amount Per Person:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="amountPerPerson"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-left:150px">
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+</div>
+</body> 
+</html>

@@ -10,24 +10,24 @@
 <br/><br/>
 
 <div style="padding-left:480px">
-<table cellspacing="20">
+<table>
 
                 <tr>
                     <td>
-                        <label>Employee Name:<span style="color: red"> *</span></label>
+                        <label class="label-font">Employee Name:<span style="color: red"> *</span></label>
                     </td>
                     <td>
                         <select id="eName" style="width:100%">
                             <option>--select--</option>
-                            <option>prachi</option>
-                            <option>aishwarya</option>
+                            <option>Prachi</option>
+                            <option>Aishwarya</option>
                         </select>
                     </td>
                 </tr>
 
                 <tr>
                     <td>
-                        <label>Amount Expected:</label>
+                        <label class="label-font">Amount Expected:</label>
                     </td>
                     <td>
                         <input type="text" id="amountExpected" readonly />
@@ -36,7 +36,7 @@
 
                 <tr>
                     <td>
-                        <label>Amount Received:<span style="color: red"> *</span></label>
+                        <label class="label-font">Amount Received:<span style="color: red"> *</span></label>
                     </td>
                     <td>
                         <input type="text" id="amountReceived" maxlength="4" placeholder="Enter Digits only" />
@@ -45,10 +45,33 @@
 
                 <tr>
                     <td style="padding-left:150px">
-                        <button type="submit" id="btnSubmit">Submit</button>
+                        <input class="label-font" type="submit" value="Submit">
                     </td>
                 </tr>
             </table>
 </div>
+
+<br/><br/>
+
+<table id="employees">
+  <tr>
+    <th>Employee Code</th>
+    <th>Employee Name</th>
+    <th>Amount Received</th>
+  </tr>
+  <tr>
+    <td>1993</td>
+    <td>Prachi Gupta</td>
+    <td>56</td>
+  </tr>
+  <tr>
+    <td>1989</td>
+    <td>Prachi Singhal</td>
+    <td>78</td>
+  </tr>
+  </table>
+
+<br/><br/><br/><br/>
+
 </body>
 </html>
