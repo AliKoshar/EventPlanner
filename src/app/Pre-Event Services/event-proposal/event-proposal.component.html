@@ -1,51 +1,45 @@
+<div class="Form">
+          <h1 style="text-align:center">Event Proposal</h1>
+      </div>
+      <table id="tblEventProposal" style="margin: 0px auto">
+          <tr>
+              <td style="height: 80px;">
+                  <label>Select Date: </label>
+                  <span style="color: red"> *</span></td>
+              <td style="width: 172px; height: 80px;">
+             <input id="dateOfBirth" name="dateOfBirth" [(ngModel)]="dateOfBirth"
+                          type="text" bsDatepicker class="form-control" />
+               
+                
+              </td>
+          </tr>
+          <tr>
+              <td style="height: 80px;">
+                  <label>Estimated Expenses: </label>
+                  <span style="color: red"> *</span></td>
+              <td style="width: 172px; height: 80px;">
+                  <input type="text" id="txtEstimatedexpense" name="estimatedexpense" placeholder="Enter Digits only" maxlength="6" required /></td>
+          </tr>
 
-        <div class="Form">
-            <h1>Event Proposal</h1>
-        </div>
-        <table id="tblEventProposal" style="margin: 0px auto">
-            <tr>
-                <td style="height: 80px;">
-                    <label>Select Date: </label>
-                    <span style="color: red"> *</span></td>
-                <td style="width: 172px; height: 80px;">
-                   
-                   <!-- <input class="form-control" placeholder="yyyy-mm-dd"
-                    name="dp"  EventProposalComponent #d="ngbDatepicker">
-             <div class="input-group-append">
-               <button class="btn btn-outline-secondary" (click)="d.toggle()" type="button">
-                 <img src="images/download.png" style="width: 1.2rem; height: 1rem; cursor: pointer;"/>
-               </button>
-             </div>
-                    <input id="datepicker" dateFormat: "yy-mm-dd" /><br />-->
-                </td>
-            </tr>
-            <tr>
-                <td style="height: 80px;">
-                    <label>Estimated Expenses: </label>
-                    <span style="color: red"> *</span></td>
-                <td style="width: 172px; height: 80px;">
-                    <input type="text" id="txtEstimatedexpense" name="estimatedexpense" placeholder="Enter Digits only" maxlength="6" required /></td>
-            </tr>
+          <tr>
+              <td style="height: 80px;">
+                  <label>Number of Members: </label>
+              </td>
+              <td style="width: 172px; height: 80px;">
+                  <input id="txtNumberofmembers" name="numberofmembers" value="@Model.CountTeamMember" readonly /></td>
+          </tr>
 
-            <tr>
-                <td style="height: 80px;">
-                    <label>Number of Members: </label>
-                </td>
-                <td style="width: 172px; height: 80px;">
-                    <input id="txtNumberofmembers" name="numberofmembers" value="@Model.CountTeamMember" readonly /></td>
-            </tr>
+          <tr>
+              <td style="height: 80px;">
+                  <label>Amount Per Person: </label>
+              </td>
+              <td style="width: 172px; height: 80px;">
+                  <input type="text" name="Amountperperson" id="txtAmountperperson" readonly /></td>
+          </tr>
 
-            <tr>
-                <td style="height: 80px;">
-                    <label>Amount Per Person: </label>
-                </td>
-                <td style="width: 172px; height: 80px;">
-                    <input type="text" name="Amountperperson" id="txtAmountperperson" readonly /></td>
-            </tr>
-
-            <tr>
-                <td style="width: 172px; height: 46px;">
-                    <input type="button" value="Submit" id="btnSubmit" style="margin: auto; align-content: center; text-align: center; position: relative; top: 0px; left: 110px;" /></td>
-            </tr>
-        </table>
-      
+          <tr>
+              <td style="width: 172px; height: 46px;">
+                  <input type="button" value="Submit" id="btnSubmit" style="margin: auto; align-content: center; text-align: center; position: relative; top: 0px; left: 110px;" /></td>
+          </tr>
+      </table>
+    
