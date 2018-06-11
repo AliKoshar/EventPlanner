@@ -23,38 +23,21 @@
     <th colspan="2">Action</th>
   </tr>
 
-<tr>
-<td><input type="text" /></td>
-<td><input type="text" /></td>
-<td><input type="text" /></td>
-<td><input type="text"/></td>
-<td><input type="text"/></td>
-<td><input type="text"/></td> 
+<tr *ngFor='let member of members'>
+<td>{{ member.TeamMemberID}}</td>
+<td>{{ member.Name}}</td>
+<td>{{ member.EmailID}}</td> 
+<td>{{ member.BirthDate}}</td>
+<td>{{ member.Balance}}</td>
+<td>{{ member.Comments}}</td>
 <td>
-<button class="button-style">edit</button>
+<button class="button-style" [routerLink]="['/TeamMemberUpdate',members.TeamMemberID]">edit</button>
 </td>
 <td>
 <button class="button-style">deactivate</button>
 </td>
 </tr>
-
-<tr>
-<td><input type="text" /></td>
-<td><input type="text" /></td>
-<td><input type="text" /></td>
-<td><input type="text"/></td>
-<td><input type="text"/></td>
-<td><input type="text"/></td> 
-<td>
-<button class="button-style">edit</button>
-</td>
-<td>
-<button class="button-style">activate</button>
-</td>
-</tr>
-
-
-
 </table>
+
 </body>
 </html>

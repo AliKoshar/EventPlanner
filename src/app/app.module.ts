@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {HttpModule} from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import { RouterModule,Routes } from '@angular/router';
 
@@ -11,6 +11,9 @@ import { ReceivedContributionComponent } from './Pre-Event Services/received-con
 import { CelebrationSummaryComponent } from './Post-Event Services/celebration-summary/celebration-summary.component';
 import { TeamMemberSummaryComponent } from './Post-Event Services/team-member-summary/team-member-summary.component';
 import { CelebrationExpensesComponent } from './Post-Event Services/celebration-expenses/celebration-expenses.component';
+import {TeamMemberDetailService} from './Home/team-member-details/team-member-detail.service';
+
+import {TeamMemberUpdateComponent} from './Home/team-member-update/team-member-update.component';
 
 
 const appRoutes: Routes = [
@@ -31,25 +34,20 @@ const appRoutes: Routes = [
     ReceivedContributionComponent,
     CelebrationSummaryComponent,
     TeamMemberSummaryComponent,
-    CelebrationExpensesComponent
+    CelebrationExpensesComponent,
+    TeamMemberUpdateComponent,
   ],
   
   imports: [
     BrowserModule,
-    FormsModule,
+    FormsModule,HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
 
-  providers: [],
+  providers: [TeamMemberDetailService],
 
   bootstrap: [
-    AppComponent,
-    TeamMemberDetailsComponent,
-    EventProposalComponent,
-    ReceivedContributionComponent,
-    CelebrationSummaryComponent,
-    TeamMemberSummaryComponent,
-    CelebrationExpensesComponent
+    AppComponent
   ]
 })
 export class AppModule { }

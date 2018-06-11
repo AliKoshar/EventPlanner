@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {TeamMemberDetailService, TeamMember} from './team-member-detail.service';
+import {Observable} from 'rxjs';
+import { map } from 'rxjs/operators';
+
 
 @Component({
   selector: 'app-team-member-details',
@@ -7,9 +11,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamMemberDetailsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _teamMemberDetailService:TeamMemberDetailService) { }
+  members:TeamMember[];
 
   ngOnInit() {
+    this._teamMemberDetailService.getProducts().subscribe(res =>this.members= <TeamMember[]>res.json())
   }
-
 }
