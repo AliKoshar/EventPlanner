@@ -23,15 +23,11 @@
               "src/assets"
             ],
             "styles": [
-              "C:/Users/aishwarya.gupta/Angular/Angular - 4/EventPlanner/node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css",
-              "C:/Users/aishwarya.gupta/Angular/Angular - 4/EventPlanner/node_modules/ngx-bootstrap/datepicker/bs-datepicker.css"
+            
               
             ],
             "scripts": [
-              
-              "C:/Users/aishwarya.gupta/Angular/Angular - 4/EventPlanner/node_modules/jquery/dist/jquery.min.js",
-              "C:/Users/aishwarya.gupta/Angular/Angular - 4/EventPlanner/node_modules/bootstrap/dist/js/bootstrap.min.js"
+             
             ]
           },
           "configurations": {
@@ -79,13 +75,10 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "C:/Users/aishwarya.gupta/Angular/Angular - 4/EventPlanner/node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css",
-              "C:/Users/aishwarya.gupta/Angular/Angular - 4/EventPlanner/node_modules/ngx-bootstrap/datepicker/bs-datepicker.css"
+              
             ],
             "scripts": [
-              "C:/Users/aishwarya.gupta/Angular/Angular - 4/EventPlanner/node_modules/jquery/dist/jquery.min.js",
-              "C:/Users/aishwarya.gupta/Angular/Angular - 4/EventPlanner/node_modules/bootstrap/dist/js/bootstrap.min.js"
+            
             ],
     
             "assets": [
