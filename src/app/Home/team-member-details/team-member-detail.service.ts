@@ -15,7 +15,7 @@ export class TeamMemberDetailService {
  
 
   getProducts():Observable<Response> {
-      return  this.http.get("http://localhost:61161/api/ContributionCollector");          
+      return  this.http.get("http://localhost:61161/api/TeamMember");          
       
     }
 
