@@ -13,6 +13,8 @@ export class TeamMemberUpdateComponent implements OnInit {
 
   employeeObj:object={};
   id:number;
+  employee=[];
+  data:object={};
    private headers=new Headers({'Content-Type':'application/json'});
 
   constructor(private router:Router, private route: ActivatedRoute, private http:Http) { }
@@ -31,6 +33,20 @@ export class TeamMemberUpdateComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.route.params.subscribe(params =>{
+      this.id = +params['id'];
+    });
+    this.http.get("http://localhost:61161/api/TeamMember", this.employeeObj).subscribe(
+      (res:Response) => {
+       this.employee=res.json();
+       for(var i=0; i<this.employee.length;i++){
+         if(parseInt(this.employee[i].id)===this.id){
+           this.data=this.employee[i];
+           break;
+         }
+       }      
+      }
+    )
   }
 
 }
