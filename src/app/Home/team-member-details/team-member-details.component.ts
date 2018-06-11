@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {TeamMemberDetailService, TeamMember} from './team-member-detail.service';
+import { Router } from '@angular/router';
+import {ActivatedRoute} from '@angular/router';
 import {Observable} from 'rxjs';
 import { map } from 'rxjs/operators';
 
@@ -11,7 +13,7 @@ import { map } from 'rxjs/operators';
 })
 export class TeamMemberDetailsComponent implements OnInit {
 
-  constructor(private _teamMemberDetailService:TeamMemberDetailService) { }
+  constructor(private _teamMemberDetailService:TeamMemberDetailService,private router: Router) { }
   members:TeamMember[];
 
   ngOnInit() {

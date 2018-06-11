@@ -1,6 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+<<<<<<< HEAD
 import {HttpModule} from '@angular/http';
+=======
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+>>>>>>> b9b5e561bfa71e31a90c5ba8a5cdf4f0ab9e53d5
 import { FormsModule } from '@angular/forms';
 import { RouterModule,Routes } from '@angular/router';
 
@@ -34,20 +38,36 @@ const appRoutes: Routes = [
     ReceivedContributionComponent,
     CelebrationSummaryComponent,
     TeamMemberSummaryComponent,
+<<<<<<< HEAD
     CelebrationExpensesComponent,
     TeamMemberUpdateComponent,
+=======
+   
+    CelebrationExpensesComponent
+>>>>>>> b9b5e561bfa71e31a90c5ba8a5cdf4f0ab9e53d5
   ],
   
   imports: [
     BrowserModule,
+<<<<<<< HEAD
     FormsModule,HttpModule,
     RouterModule.forRoot(appRoutes)
+=======
+    FormsModule,
+    RouterModule.forRoot(appRoutes),
+    BsDatepickerModule.forRoot(),
+  
+>>>>>>> b9b5e561bfa71e31a90c5ba8a5cdf4f0ab9e53d5
   ],
 
   providers: [TeamMemberDetailService],
 
   bootstrap: [
     AppComponent
+<<<<<<< HEAD
   ]
+=======
+   ]
+>>>>>>> b9b5e561bfa71e31a90c5ba8a5cdf4f0ab9e53d5
 })
 export class AppModule { }
