@@ -16,11 +16,10 @@
                     <td>
                         <label class="label-font">Employee Name:<span style="color: red"> *</span></label>
                     </td>
-                    <td>
+                    <td *ngFor='let employee of employees'>
                         <select id="eName" style="width:100%">
-                            <option>--select--</option>
-                            <option>Prachi</option>
-                            <option>Aishwarya</option>
+                            <option>{{ employee.Name }}[{{ employee.TeamMemberID }}]</option>
+                            
                         </select>
                     </td>
                 </tr>
