@@ -5,6 +5,7 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
     <style>
     .center {
     margin: auto;
@@ -18,45 +19,35 @@
 
 <body>
 
-<div style="width:1440px; margin-left:-15px; margin-top:-10px;background-color:lightblue">
+<div style="width:1440px; margin-top:-10px;background-color:lightblue">
         <img src="../assets/Images/Capture.PNG" style="height: 67px; margin-top: auto; width: 100px" />
          <img src="../assets/Images/Capture2.PNG" style="margin-left:492px;margin-bottom:10px" />
 </div>
 
-<div class="navbar" style="width:1440px; margin-left:-15px">
-
-  <div class="dropdown">
-    <button class="dropbtn">Home</button>
-
-    <div class="dropdown-content"  routerLinkActive="active">
-      <a class="nav-link" routerLink="teammemberdetails">Team Details</a>
-    </div>    
-  </div> 
-
-  <div class="dropdown">
-    <button class="dropbtn">Pre-EventServices</button>
-
-    <div class="dropdown-content"  routerLinkActive="active">
-      <a class="nav-link" routerLink="eventproposal">Event Proposal</a>
-      <a class="nav-link" routerLink="receivedcontribution">Received Contribution</a>
-    </div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li><a routerLink="teammemberdetails">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Pre-Event Services <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a routerLink="eventproposal">Event Proposal</a></li>
+          <li><a routerLink="receivedcontribution">Received Contribution</a></li>
+       
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Post-Event Services <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a routerLink="celebrationsummary">Celebration Summary</a></li>
+          <li><a routerLink="teammembersummary">Team Member Sumamry</a></li>
+       	  <li><a routerLink="celebrationexpenses">Celebration Expenses</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+    </ul>
   </div>
-
-  <div class="dropdown">
-    <button class="dropbtn">Post-EventServices</button>
-
-    <div class="dropdown-content">
-      <a class="nav-link" routerLink="celebrationsummary">Celebration Summary</a>
-      <a class="nav-link" routerLink="teammembersummary">Team Member Summary</a>
-      <a class="nav-link" routerLink="celebrationexpenses">Celebration Expenses</a>
-    </div>
-  </div> 
-
-  <div class="dropdown" style="float:right">
-    <button class="dropbtn">Logout</button>
-  </div>
-
-</div>
+</nav>
 
 <div>
   <router-outlet></router-outlet>
