@@ -8,8 +8,7 @@
 <body>
 <h1 style="text-align:center">Team Member Details</h1>
 <br/><br/>
-
-<button class="button-style" style="width:20%">Add New Employee</button>
+ <button class="button-style" style="width:20%" [routerLink]="['/addTeamMember']">Add New Employee</button>
 <br/><br/>
 
 <table id="employees">
@@ -30,14 +29,15 @@
 <td>{{ member.BirthDate}}</td>
 <td>{{ member.Balance}}</td>
 <td>{{ member.Comments}}</td>
+
+ <td>
+ <button class="button-style"  [routerLink]="['/updateTeamMember']">Edit</button>
+ </td>
+
 <td>
-<button class="button-style"><a [routerLink]="['/TeamMemberUpdate' ]">edit</a></button>
-</td>
-<td>
-<button class="button-style">deactivate</button>
+<button class="button-style" (click)="deactivate(TeamMember.TeamMemberID)">Deactivate</button>
 </td>
 </tr>
 </table>
-
 </body>
 </html>

@@ -1,15 +1,18 @@
 import { Component, OnInit } from '@angular/core';
+import { TeamMemberSummaryService, TeamMemberSummary } from "src/app/Post-Event Services/team-member-summary/team-member-summary.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-team-member-summary',
   templateUrl: './team-member-summary.component.html',
   styleUrls: ['./team-member-summary.component.css']
 })
+
 export class TeamMemberSummaryComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+ constructor(private _teamMemberDetailService:TeamMemberSummaryService,private router: Router) { }
+  members:TeamMemberSummary[];
+ ngOnInit() {
+    this._teamMemberDetailService.getSummary().subscribe(res =>this.members= <TeamMemberSummary[]>res.json())
   }
-
 }
