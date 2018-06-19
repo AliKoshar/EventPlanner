@@ -18,9 +18,7 @@
                     </td>
                     <td>
                         <select id="cDate" style="width:100%">
-                            <option>--select--</option>
-                            <option>01-Jan-18</option>
-                            <option>01-Feb-18</option>
+                            <option *ngFor='let date of dates'>{{ date.CelebrationDate }}</option>                            
                         </select>
                     </td>
                 </tr>

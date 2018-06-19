@@ -16,6 +16,6 @@ export class ReceivedContributionComponent implements OnInit {
   employees:ReceivedContribution[];
 
   ngOnInit() {
-    this._receivedContributionService.getProducts().subscribe(res =>this.employees= <ReceivedContribution[]>res.json())
+    this._receivedContributionService.getTeamMembers().subscribe(res =>this.employees= <ReceivedContribution[]>res.json())
   }
 }

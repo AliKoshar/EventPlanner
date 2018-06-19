@@ -8,19 +8,16 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 @Injectable({
   providedIn: 'root'
 })
-export class ReceivedContributionService {
+export class CelebrationExpensesService {
 
   constructor(private http:Http) { }
 
-  getTeamMembers():Observable<Response> {
-      return  this.http.get("http://localhost:61161/api/ContributionCollector");          
+  getCelebrationDate():Observable<Response> {
+      return  this.http.get("http://localhost:61161/api/CelebrationExpenses");          
     }
-
-
 }
 
-export interface ReceivedContribution
+export interface CelebrationExpenses
 {    
-    Name:string;  
-    TeamMemberID:number;  
+    CelebrationDate:Date;  
 }
