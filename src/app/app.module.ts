@@ -11,10 +11,11 @@ import { ReceivedContributionComponent } from './Pre-Event Services/received-con
 import { CelebrationSummaryComponent } from './Post-Event Services/celebration-summary/celebration-summary.component';
 import { TeamMemberSummaryComponent } from './Post-Event Services/team-member-summary/team-member-summary.component';
 import { CelebrationExpensesComponent } from './Post-Event Services/celebration-expenses/celebration-expenses.component';
-import {TeamMemberDetailService} from './Home/team-member-details/team-member-detail.service';
-
 import {TeamMemberUpdateComponent} from './Home/team-member-update/team-member-update.component';
 
+import { TeamMemberDetailService } from './Home/team-member-details/team-member-detail.service';
+import { CelebrationExpensesService } from "src/app/Post-Event Services/celebration-expenses/celebration-expenses.service";
+import { ReceivedContributionService } from "src/app/Pre-Event Services/received-contribution/received-contribution.service";
 
 const appRoutes: Routes = [
   { path: 'teammemberdetails', component: TeamMemberDetailsComponent }, 
@@ -44,7 +45,11 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes)
   ],
 
-  providers: [TeamMemberDetailService],
+  providers: 
+  [TeamMemberDetailService,
+  CelebrationExpensesService,
+  ReceivedContributionService
+  ],
 
   bootstrap: [
     AppComponent

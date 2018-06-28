@@ -12,15 +12,17 @@ export class ReceivedContributionService {
 
   constructor(private http:Http) { }
 
-  getTeamMembers():Observable<Response> {
-      return  this.http.get("http://localhost:61161/api/ContributionCollector");          
+    getTeamMembers():Observable<Response> {
+      return  this.http.get("http://localhost:61161/api/ContributionCollector/GetData");          
     }
-
-
+    getAmountToBePaid():Observable<Response> {
+      return  this.http.get("http://localhost:61161/api/ContributionCollector/GetAmountToBePaid");          
+    }
 }
 
 export interface ReceivedContribution
 {    
     Name:string;  
     TeamMemberID:number;  
+    AmountToBePaid:number;
 }
