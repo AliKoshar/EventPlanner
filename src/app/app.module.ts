@@ -11,12 +11,18 @@ import { ReceivedContributionComponent } from './Pre-Event Services/received-con
 import { CelebrationSummaryComponent } from './Post-Event Services/celebration-summary/celebration-summary.component';
 import { TeamMemberSummaryComponent } from './Post-Event Services/team-member-summary/team-member-summary.component';
 import { CelebrationExpensesComponent } from './Post-Event Services/celebration-expenses/celebration-expenses.component';
+<<<<<<< HEAD
 import {TeamMemberDetailService} from './Home/team-member-details/team-member-detail.service';
+=======
+>>>>>>> 20a9e59aa46c6a8f9167d22c92b9bdcfd8efb343
 import {TeamMemberUpdateComponent} from './Home/team-member-update/team-member-update.component';
 import { AddTeamMemberComponent } from './Home/add-team-member/add-team-member.component';
 import { TeamMemberSummaryService } from "src/app/Post-Event Services/team-member-summary/team-member-summary.service";
 import { TeamMemberDetailedViewComponent } from "src/app/Post-Event Services/team-member-detailed-view/team-member-detailed-view.component";
 
+import { TeamMemberDetailService } from './Home/team-member-details/team-member-detail.service';
+import { CelebrationExpensesService } from "src/app/Post-Event Services/celebration-expenses/celebration-expenses.service";
+import { ReceivedContributionService } from "src/app/Pre-Event Services/received-contribution/received-contribution.service";
 
 const appRoutes: Routes = [
   { path: 'teammemberdetails', component: TeamMemberDetailsComponent }, 
@@ -51,10 +57,18 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes)
   ],
 
+<<<<<<< HEAD
   providers: [
     TeamMemberDetailService,
     TeamMemberSummaryService,
     ],
+=======
+  providers: 
+  [TeamMemberDetailService,
+  CelebrationExpensesService,
+  ReceivedContributionService
+  ],
+>>>>>>> 20a9e59aa46c6a8f9167d22c92b9bdcfd8efb343
 
   bootstrap: [
     AppComponent

@@ -22,6 +22,7 @@
               "src/favicon.ico",
               "src/assets"
             ],
+<<<<<<< HEAD
                       "styles": [
               "C:/Users/prachi.singhal/Angular/EventPlanner/node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css",
@@ -30,6 +31,16 @@
             "scripts": [
               "C:/Users/prachi.singhal/Angular/EventPlanner/node_modules/jquery/dist/jquery.min.js",
               "C:/Users/prachi.singhal/Angular/EventPlanner/node_modules/bootstrap/dist/js/bootstrap.min.js"
+=======
+            "styles": [
+            "C:/Users/prachi.gupta/Desktop/Angular/EventPlanner/node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css",
+              "C:/Users/prachi.gupta/Desktop/Angular/EventPlanner/node_modules/ngx-bootstrap/datepicker/bs-datepicker.css"              
+            ],
+            "scripts": [
+             "C:/Users/prachi.gupta/Desktop/Angular/EventPlanner/node_modules/jquery/dist/jquery.min.js",
+              "C:/Users/prachi.gupta/Desktop/Angular/EventPlanner/node_modules/bootstrap/dist/js/bootstrap.min.js"
+>>>>>>> 20a9e59aa46c6a8f9167d22c92b9bdcfd8efb343
             ]
 
           },
@@ -77,6 +88,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
+<<<<<<< HEAD
                        "styles": [
               "C:/Users/prachi.singhal/Angular/EventPlanner/node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css",
@@ -85,6 +97,16 @@
             "scripts": [
               "C:/Users/prachi.singhal/Angular/EventPlanner/node_modules/jquery/dist/jquery.min.js",
               "C:/Users/prachi.singhal/Angular/EventPlanner/node_modules/bootstrap/dist/js/bootstrap.min.js"
+=======
+            "styles": [
+              "C:/Users/prachi.gupta/Desktop/Angular/EventPlanner/node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css",
+              "C:/Users/prachi.gupta/Desktop/Angular/EventPlanner/node_modules/ngx-bootstrap/datepicker/bs-datepicker.css"  
+            ],
+            "scripts": [
+            "C:/Users/prachi.gupta/Desktop/Angular/EventPlanner/node_modules/jquery/dist/jquery.min.js",
+              "C:/Users/prachi.gupta/Desktop/Angular/EventPlanner/node_modules/bootstrap/dist/js/bootstrap.min.js"
+>>>>>>> 20a9e59aa46c6a8f9167d22c92b9bdcfd8efb343
             ],
 
     

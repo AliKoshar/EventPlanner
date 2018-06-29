@@ -20,4 +20,14 @@ export class TeamMemberDetailsComponent implements OnInit {
  ngOnInit() {
     this._teamMemberDetailService.getProducts().subscribe(res =>this.members= <TeamMember[]>res.json())
   }
+
+  deactivateEmployee=function(TeamMemberID) 
+{
+  alert("Are you sure you want to deactivate this user ?");
+  /*if(confirm("are you sure??"))
+  {
+  //const url = `${"http://localhost:8000/product"}/${id}`;
+  return this.http.get("http://localhost:61161/api/TeamMember/DeactivateEmployee(TeamMemberID)");
+  }*/
+}
 }

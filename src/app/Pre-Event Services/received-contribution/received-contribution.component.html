@@ -18,9 +18,7 @@
                     </td>
                     <td>
                         <select id="eName" style="width:100%">
-                            <option>--select--</option>
-                            <option>Prachi</option>
-                            <option>Aishwarya</option>
+                            <option *ngFor='let employee of employees'>{{ employee.Name }}[{{ employee.TeamMemberID }}]</option>                            
                         </select>
                     </td>
                 </tr>
