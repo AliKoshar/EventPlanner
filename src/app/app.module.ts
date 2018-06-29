@@ -12,8 +12,10 @@ import { CelebrationSummaryComponent } from './Post-Event Services/celebration-s
 import { TeamMemberSummaryComponent } from './Post-Event Services/team-member-summary/team-member-summary.component';
 import { CelebrationExpensesComponent } from './Post-Event Services/celebration-expenses/celebration-expenses.component';
 import {TeamMemberDetailService} from './Home/team-member-details/team-member-detail.service';
-
 import {TeamMemberUpdateComponent} from './Home/team-member-update/team-member-update.component';
+import { AddTeamMemberComponent } from './Home/add-team-member/add-team-member.component';
+import { TeamMemberSummaryService } from "src/app/Post-Event Services/team-member-summary/team-member-summary.service";
+import { TeamMemberDetailedViewComponent } from "src/app/Post-Event Services/team-member-detailed-view/team-member-detailed-view.component";
 
 
 const appRoutes: Routes = [
@@ -22,7 +24,10 @@ const appRoutes: Routes = [
   { path: 'receivedcontribution', component: ReceivedContributionComponent },
   { path: 'celebrationsummary', component: CelebrationSummaryComponent },
   { path: 'teammembersummary', component: TeamMemberSummaryComponent },
-  { path: 'celebrationexpenses', component: CelebrationExpensesComponent }
+  { path: 'celebrationexpenses', component: CelebrationExpensesComponent },
+    {path:'addTeamMember',component:AddTeamMemberComponent },
+    {path:'updateTeamMember',component:TeamMemberUpdateComponent },
+     {path:'TeamMemberDetailedView',component:TeamMemberDetailedViewComponent }
 ];
 
 
@@ -36,6 +41,8 @@ const appRoutes: Routes = [
     TeamMemberSummaryComponent,
     CelebrationExpensesComponent,
     TeamMemberUpdateComponent,
+    AddTeamMemberComponent,
+    TeamMemberDetailedViewComponent
   ],
   
   imports: [
@@ -44,7 +51,10 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes)
   ],
 
-  providers: [TeamMemberDetailService],
+  providers: [
+    TeamMemberDetailService,
+    TeamMemberSummaryService,
+    ],
 
   bootstrap: [
     AppComponent

@@ -24,7 +24,9 @@
 <td>{{ member.AmountToBePaid}}</td> 
 <td>{{ member.AmountPaid}}</td>
 <td>{{ member.Balance}}</td>
-<td><button class="button-style">view</button></td>
+ <td>
+ <button class="button-style"  [routerLink]="['/TeamMemberDetailedView']">View</button>
+ </td>
   </tr>
 </table>
 <br/><br/><br/><br/>
